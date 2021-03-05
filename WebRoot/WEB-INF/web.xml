@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>web.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>web.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UtilServlet</servlet-name>
+    <servlet-class>web.UtilServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SignUpServlet</servlet-name>
+    <servlet-class>web.SignUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SearchUserInfo</servlet-name>
+    <servlet-class>web.SearchUserInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SearchUserInfoByid</servlet-name>
+    <servlet-class>web.SearchUserInfoByid</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateUserInfoByid</servlet-name>
+    <servlet-class>web.UpdateUserInfoByid</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteUserInfoByid</servlet-name>
+    <servlet-class>web.DeleteUserInfoByid</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserUpdatePwd</servlet-name>
+    <servlet-class>web.UserUpdatePwd</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ManagerUpdatePwd</servlet-name>
+    <servlet-class>web.ManagerUpdatePwd</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SearchModel_3d</servlet-name>
+    <servlet-class>web.SearchModel_3d</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FileUploadServlet</servlet-name>
+    <servlet-class>web.FileUploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FileDownServlet</servlet-name>
+    <servlet-class>web.FileDownServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FileDeleteServlet</servlet-name>
+    <servlet-class>web.FileDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MarkServlet</servlet-name>
+    <servlet-class>web.MarkServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SignDeleteServlet</servlet-name>
+    <servlet-class>web.SignDeleteServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>FileDeleteServlet</servlet-name>
+    <url-pattern>/FileDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FileDownServlet</servlet-name>
+    <url-pattern>/FileDownServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FileUploadServlet</servlet-name>
+    <url-pattern>/FileUploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UtilServlet</servlet-name>
+    <url-pattern>/UtilServlet</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>SignUpServlet</servlet-name>
+    <url-pattern>/SignUpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchUserInfo</servlet-name>
+    <url-pattern>/SearchUserInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchUserInfoByid</servlet-name>
+    <url-pattern>/SearchUserInfoByid</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateUserInfoByid</servlet-name>
+    <url-pattern>/UpdateUserInfoByid</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteUserInfoByid</servlet-name>
+    <url-pattern>/DeleteUserInfoByid</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>UserUpdatePwd</servlet-name>
+    <url-pattern>/userupdatepwd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ManagerUpdatePwd</servlet-name>
+    <url-pattern>/managerupdatepwd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchModel_3d</servlet-name>
+    <url-pattern>/SearchModel_3d</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MarkServlet</servlet-name>
+    <url-pattern>/MarkServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SignDeleteServlet</servlet-name>
+    <url-pattern>/SignDeleteServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <filter>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>web.LoginFilter</filter-class>
+  </filter>
+    <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/page/*</url-pattern>
+  </filter-mapping>
+</web-app>
